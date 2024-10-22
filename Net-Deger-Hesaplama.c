@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 int main(){
     int yil, h=0;
@@ -40,11 +41,13 @@ int main(){
     
     sonuc = toplam-yatirim;
 
-    printf("Sonucumuz =%f \n", sonuc);
+    printf("Sonucumuz =  %f \n", sonuc);
     if (sonuc > 0)
     {
-        printf("Sonucumuz 0'dan buyuk oldugu icin yatirim yapmaniz tavsiye edilir.");
+        printf("Sonucumuz 0'dan buyuk oldugu icin yatirim yapmaniz tavsiye edilir.\n");
     } else {
-        printf("Sonucumuz 0'dan buyuk olmadigi icin yatirim yapmaniz tavsiye edilmez!!");
+        printf("Sonucumuz 0'dan buyuk olmadigi icin yatirim yapmaniz tavsiye edilmez!!\n");
     }
+
+    system("pause");
 }
